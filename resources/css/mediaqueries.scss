@@ -243,14 +243,15 @@
 		}
 	}
 
-
+		.wrapper {
+			@include backgroundfixed();
+		}
 
 			.bike-nightrider {
 				
 				left: 20%;
 				right: 20%;
 
-				
 			}
 
 			.bike-traveller {

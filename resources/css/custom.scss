@@ -46,6 +46,10 @@ $fake : #f5978f ;
 	position: relative;
 }
 
+@mixin backgroundfixed() {
+	background-attachment: fixed;
+}
+
 * {
 	margin: 0;
 	padding: 0;
