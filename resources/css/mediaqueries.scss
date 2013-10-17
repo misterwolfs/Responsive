@@ -1,5 +1,344 @@
-@media screen and (max-width: 600px) {
-  .class {
-    background: #ccc;
-  }
+@media only screen and (min-width : 640px)  { 
+	
+			.bike-nightrider {
+				
+				left: 10%;
+				right: 10%;
+			}
+
+			.bike-traveller {
+				left: 5%;
+				right: 5%;
+			}	
+		
+			.bike-weirdo {
+				left: 5%;
+				right: 5%;
+			}	
+		
+			.bike-hipster {
+				left: 5%;
+				right: 5%;
+	 		}
+
+			.bike-swagger {
+				left: 5%;
+				right: 5%;
+			}	
+		
+			.bike-vintage {
+				left: 5%;
+				right: 5%;
+			}
+
+			.bike-grandpa {
+				left: 5%;
+				right: 5%;
+			}
+
+			.bike-tandem {
+				left: 5%;
+				right: 5%;
+			}	
+		
+
+			.bike-baby {
+				left: 5%;
+				right: 5%;
+			}	
+			
+			.bike-cougar {
+				left: 5%;
+				right: 5%;
+				
+			}	
+			
+			.bike-freestyler {
+				left: 5%;
+				right: 5%;
+			}	
+			
+			.bike-gangsta {
+				left: 5%;
+				right: 5%;
+			}	
+			
+			.bike-lilgangsta {
+				left: 5%;
+				right: 5%;
+			}		
+	
+			.bike-runner {
+				left: 5%;
+				right: 5%;
+			}
+
+			.bike-rigid {
+				left: 5%;
+				right: 5%;
+			}
+
+			.bike-warrior {
+				left: 5%;
+				right: 5%;
+			}
+	
+			.bike-lazy {
+				left: 5%;
+				right: 5%;
+			}
+
+			.bike-fake {
+				
+				left: 30%;
+				right: 30%;
+	
+			}
+}
+
+
+@media only screen and (min-width : 768px) and (min-device-width : 768px)  { 
+	
+			.bike-nightrider {
+				
+				left: 10%;
+				right: 10%;
+
+				
+				
+			}
+
+			.bike-traveller {
+				left: 10%;
+				right: 10%;
+			}	
+		
+			.bike-weirdo {
+				left: 10%;
+				right: 10%;
+			}	
+		
+			.bike-hipster {
+				left: 10%;
+				right: 10%;
+	 		}
+
+			.bike-swagger {
+				left: 10%;
+				right: 10%;
+			}	
+		
+			.bike-vintage {
+				left: 20%;
+				right: 20%;
+
+				
+				
+			}
+
+			.bike-grandpa {
+				left: 10%;
+				right: 10%;
+			}
+
+			.bike-tandem {
+				left: 10%;
+				right: 10%;
+			}	
+		
+
+			.bike-baby {
+				left: 20%;
+				right: 20%;
+
+			}	
+			
+			.bike-cougar {
+				left: 10%;
+				right: 10%;
+				
+			}	
+			
+			.bike-freestyler {
+				left: 10%;
+				right: 10%;
+			}	
+			
+			.bike-gangsta {
+				left: 10%;
+				right: 10%;
+			}	
+			
+			.bike-lilgangsta {
+				left: 10%;
+				right: 10%;
+			}		
+	
+			.bike-runner {
+				left: 10%;
+				right: 10%;
+			}
+
+			.bike-rigid {
+				left: 10%;
+				right: 10%;
+			}
+
+			.bike-warrior {
+				left: 10%;
+				right: 10%;
+			}
+	
+			.bike-lazy {
+				left: 10%;
+				right: 10%;
+			}
+
+			.bike-fake {
+				
+				left: 50%;
+				right: 50%;
+
+	
+			}
+}
+
+
+@media only screen and (min-width : 1024px)  { 
+	
+	.intro {
+		background-size: 40px;
+	}
+
+	.menu-title {
+		display:none;
+	}
+
+	.navigation {
+		position: fixed;
+		color: $white;
+		margin-top: 20px;
+		margin-left: 20px;
+
+		ul {
+			background: none;
+
+			li { 
+				display: inline;
+				margin: 10px;
+				margin-left: 0px;
+				color: $yellow;
+				padding: 10px;
+				border: none;
+
+
+				&:hover {
+					color: $white;
+				}
+			}
+
+			.last {
+				border-bottom: none;
+			}
+		}
+	}
+
+
+
+			.bike-nightrider {
+				
+				left: 20%;
+				right: 20%;
+
+				
+			}
+
+			.bike-traveller {
+				left: 5%;
+				right: 5%;
+			}	
+		
+			.bike-weirdo {
+				left: 5%;
+				right: 5%;
+			}	
+		
+			.bike-hipster {
+				left: 5%;
+				right: 5%;
+	 		}
+
+			.bike-swagger {
+				left: 5%;
+				right: 5%;
+			}	
+		
+			.bike-vintage {
+				left: 5%;
+				right: 5%;
+			}
+
+			.bike-grandpa {
+				left: 5%;
+				right: 5%;
+			}
+
+			.bike-tandem {
+				left: 5%;
+				right: 5%;
+			}	
+		
+
+			.bike-baby {
+				left: 5%;
+				right: 5%;
+			}	
+			
+			.bike-cougar {
+				left: 5%;
+				right: 5%;
+				
+			}	
+			
+			.bike-freestyler {
+				left: 5%;
+				right: 5%;
+			}	
+			
+			.bike-gangsta {
+				left: 5%;
+				right: 5%;
+			}	
+			
+			.bike-lilgangsta {
+				left: 5%;
+				right: 5%;
+			}		
+	
+			.bike-runner {
+				left: 5%;
+				right: 5%;
+			}
+
+			.bike-rigid {
+				left: 5%;
+				right: 5%;
+			}
+
+			.bike-warrior {
+				left: 5%;
+				right: 5%;
+			}
+	
+			.bike-lazy {
+				left: 5%;
+				right: 5%;
+			}
+
+			.bike-fake {
+				
+				left: 30%;
+				right: 30%;
+	
+			}
 }

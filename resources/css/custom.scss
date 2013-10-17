@@ -534,6 +534,8 @@ $fake : #f5978f ;
 				position: absolute;
 				padding: 10px;
 				bottom: 40px;
+				left:10%;
+				right: 10%;
 				
 				img {
 					width: 100%;
@@ -541,7 +543,47 @@ $fake : #f5978f ;
 			}
 		}
 	}
-
-	
-
 }
+
+.subnav {
+
+	position: fixed;
+	z-index: 4;
+	right: 10px;
+	top:20%;
+	bottom: 20%;
+
+	ul {
+		
+		list-style-type: none;
+		text-align: right;
+
+		li {
+			width: 15px;
+			height: 15px;
+			margin: 5px;
+			background-color: rgba(255,255,255, .6);
+			border-radius: 3px;
+
+			span {
+				position: relative;
+				margin-left: -100px;
+				left: -30px;
+				display: none;
+				color: $white;
+				font-family: intro;
+				font-size: 15px;
+			}
+			
+			&:hover {
+				background-color: rgba(255,255,255, 1);
+
+				span {
+					display: block;
+					text-align: right;
+				}
+			}
+		}
+	}
+}
+
