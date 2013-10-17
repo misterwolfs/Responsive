@@ -1,0 +1,547 @@
+/* COLORS */
+$darkyellow : #fec56d;
+$yellow : #ffe2b6;
+$white : #ffffff;
+
+$nightrider : #000000 ;
+$traveller : #f4d0ac ;
+$weirdo : #b0deed;
+$hipster : #f69cc0 ;
+$swagger : #abe6f4;
+$vintage : #f8d5b9 ;
+$grandpa : #a0e3fe;
+$tandem : #f8ca7d;
+$baby : #fbdff8;
+$cougar : #c6deff;
+$freestyler : #91fad2;
+$gangsta : #f8c075;
+$lilgansta : #ffd4ab;
+$runner : #b2f9d7 ;
+$rigid : #dbdbdb;
+$warrior : #fdddae;
+$lazy : #fb9d79;
+$fake : #f5978f ;
+
+
+/* MIXINS */
+@mixin background($image, $repeat, $position, $size) {
+	background: {
+        image: url('../img/' + $image + '.jpg');
+        repeat: $repeat;
+        position: $position;
+        size: $size;
+    }
+}
+
+@mixin bike($color)
+{
+	background-color: $color;
+	top:0px;
+	padding: 10px 0px;
+}
+
+@mixin wrapper() {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+
+.menu-title {
+	position: relative;
+	text-align: center;
+	font-size: 25px;
+	font-family: intro;
+	padding: 5px 0px;
+	z-index: 4;
+	width: 100%;
+	color: $darkyellow;
+	background-color: $yellow;
+}
+
+.navigation {
+		position: relative;
+		z-index: 4;
+		font-family: intro;
+		width: 100%;
+		color: $darkyellow;
+		margin-top: -158px;
+
+		ul {
+			position: relative;
+			left: 0px;
+			width: 100%;
+			background-color: white;
+
+			li { 
+				margin: 10px;
+				margin-left: -200px;
+				color: $darkyellow;
+				padding: 10px;
+				border-bottom: 1px $yellow solid;
+
+				&:hover {
+					color: $white;
+				}
+			}
+
+			.last {
+				border-bottom: none;
+			}
+		}
+	}
+
+.big-wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+
+	/*width: 80%;
+	float: right;
+	right: 0px;*/
+
+	.full {
+		position: relative;
+		height: 100%;
+		min-height: 100%;
+		width: 100%;
+	}
+
+	.intro {
+		top:0;
+		background-color: $darkyellow;
+		font-family: intro;
+		@include background('header', no-repeat, center, 90%);
+	}
+
+	.nightrider {
+
+		@include bike($nightrider);
+
+		
+
+		.wrapper {
+			@include wrapper();
+			
+			@include background('nightrider', no-repeat, center, cover);
+
+			.bike-nightrider {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	
+	.traveller {
+		@include bike($traveller);
+		
+		
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('traveller', no-repeat, center, cover);
+
+			.bike-traveller {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+
+		}
+	}
+
+	
+
+	.weirdo {
+		@include bike($weirdo);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('weirdo', no-repeat, center, cover);
+
+			.bike-weirdo {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.hipster {
+		@include bike($hipster);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('hipster', no-repeat, center, cover);
+
+			.bike-hipster {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.swagger {
+		@include bike($swagger);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('swagger', no-repeat, center, cover);
+
+			.bike-swagger {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.vintage {
+		@include bike($vintage);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('vintage', no-repeat, center, cover);
+
+			.bike-vintage {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.grandpa {
+		@include bike($grandpa);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('grandpa', no-repeat, center, cover);
+
+			.bike-grandpa {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.tandem {
+		@include bike($tandem);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('tandem', no-repeat, center, cover);
+
+			.bike-tandem {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+		
+				
+				img {
+				
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.baby {
+		@include bike($baby);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('baby', no-repeat, center, cover);
+
+			.bike-baby {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.cougar {
+		@include bike($cougar);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('cougar', no-repeat, center, cover);
+
+			.bike-cougar {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				margin: 0px auto;
+				
+				img {
+					width: 100%;
+
+				}
+			}
+		}
+	}
+
+	.freestyler {
+		@include bike($freestyler);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('freestyler', no-repeat, center, cover);
+
+			.bike-freestyler {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.gangsta {
+		@include bike($gangsta);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('gangsta', no-repeat, center, cover);
+
+			.bike-gangsta {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.lilgangsta {
+		@include bike($lilgansta);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('lilgangsta', no-repeat, center, cover);
+
+			.bike-lilgangsta {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.runner {
+		@include bike($runner);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('runner', no-repeat, center, cover);
+
+			.bike-runner {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.rigid {
+		@include bike($rigid);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('rigid', no-repeat, center, cover);
+
+			.bike-rigid {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.warrior {
+		@include bike($warrior);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('warrior', no-repeat, center, cover);
+
+			.bike-warrior {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.lazy {
+		@include bike($lazy);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('lazy', no-repeat, center, cover);
+
+			.bike-lazy {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.fake {
+		@include bike($fake);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('fake', no-repeat, center, cover);
+
+			.bike-fake {
+				position: absolute;
+				padding: 10px;
+				bottom: 40px;
+				
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	
+
+}
