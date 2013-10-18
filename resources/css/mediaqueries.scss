@@ -1,219 +1,228 @@
+/*@media only screen and (min-width : 640px) and (min-device-width : 768px)  { */
+
 @media only screen and (min-width : 640px)  { 
-	
-			.bike-nightrider {
-				
-				left: 10%;
-				right: 10%;
-			}
-
-			.bike-traveller {
-				left: 5%;
-				right: 5%;
-			}	
+	.big-wrapper {
 		
-			.bike-weirdo {
-				left: 5%;
-				right: 5%;
-			}	
-		
-			.bike-hipster {
-				left: 5%;
-				right: 5%;
-	 		}
+		.vintage {
 
-			.bike-swagger {
-				left: 5%;
-				right: 5%;
-			}	
-		
-			.bike-vintage {
-				left: 5%;
-				right: 5%;
-			}
-
-			.bike-grandpa {
-				left: 5%;
-				right: 5%;
-			}
-
-			.bike-tandem {
-				left: 5%;
-				right: 5%;
-			}	
-		
-
-			.bike-baby {
-				left: 5%;
-				right: 5%;
-			}	
 			
-			.bike-cougar {
-				left: 5%;
-				right: 5%;
+
+			.wrapper {
 				
-			}	
-			
-			.bike-freestyler {
-				left: 5%;
-				right: 5%;
-			}	
-			
-			.bike-gangsta {
-				left: 5%;
-				right: 5%;
-			}	
-			
-			.bike-lilgangsta {
-				left: 5%;
-				right: 5%;
-			}		
-	
-			.bike-runner {
-				left: 5%;
-				right: 5%;
+				.bike-vintage {
+					
+					@include backgroundsize(75%);
+				}
 			}
+		}
 
-			.bike-rigid {
-				left: 5%;
-				right: 5%;
-			}
-
-			.bike-warrior {
-				left: 5%;
-				right: 5%;
-			}
-	
-			.bike-lazy {
-				left: 5%;
-				right: 5%;
-			}
-
-			.bike-fake {
-				
-				left: 30%;
-				right: 30%;
-	
-			}
-}
-
-
-@media only screen and (min-width : 768px) and (min-device-width : 768px)  { 
-	
-			.bike-nightrider {
-				
-				left: 10%;
-				right: 10%;
-
-				
-				
-			}
-
-			.bike-traveller {
-				left: 10%;
-				right: 10%;
-			}	
-		
-			.bike-weirdo {
-				left: 10%;
-				right: 10%;
-			}	
-		
-			.bike-hipster {
-				left: 10%;
-				right: 10%;
-	 		}
-
-			.bike-swagger {
-				left: 10%;
-				right: 10%;
-			}	
-		
-			.bike-vintage {
-				left: 20%;
-				right: 20%;
-
-				
-				
-			}
-
-			.bike-grandpa {
-				left: 10%;
-				right: 10%;
-			}
-
-			.bike-tandem {
-				left: 10%;
-				right: 10%;
-			}	
-		
-
-			.bike-baby {
-				left: 20%;
-				right: 20%;
-
-			}	
-			
-			.bike-cougar {
-				left: 10%;
-				right: 10%;
-				
-			}	
-			
-			.bike-freestyler {
-				left: 10%;
-				right: 10%;
-			}	
-			
-			.bike-gangsta {
-				left: 10%;
-				right: 10%;
-			}	
-			
-			.bike-lilgangsta {
-				left: 10%;
-				right: 10%;
-			}		
-	
-			.bike-runner {
-				left: 10%;
-				right: 10%;
-			}
-
-			.bike-rigid {
-				left: 10%;
-				right: 10%;
-			}
-
-			.bike-warrior {
-				left: 10%;
-				right: 10%;
-			}
-	
-			.bike-lazy {
-				left: 10%;
-				right: 10%;
-			}
-
-			.bike-fake {
-				
-				left: 50%;
-				right: 50%;
-
-	
-			}
-}
-
-
-@media only screen and (min-width : 1024px)  { 
-	
-	.intro {
-		background-size: 40px;
 	}
+}
+
+@media only screen and (min-width : 768px) and (max-width: 1023px) { 
+	.big-wrapper {
+		
+		.nightrider {
+			.wrapper {
+
+			.bike-nightrider {
+				
+				@include backgroundsize(50%);
+			}
+		}
+		}
+
+		.traveller {
+			.wrapper {
+
+			.bike-traveller {
+					
+				@include backgroundsize(70%);
+			}
+		}
+		}
+	
+		.weirdo {
+			.wrapper {
+
+			.bike-weirdo {
+				
+				@include backgroundsize(70%);
+			}
+		}
+		}
+	
+		.hipster {
+			.wrapper {
+
+			.bike-hipster {
+				
+				@include backgroundsize(70%);
+			}
+		}
+		}
+	
+		.swagger {
+			.wrapper {
+
+			.bike-swagger {		
+				@include backgroundsize(70%);
+			}
+		}
+		}
+	
+		.vintage {
+			.wrapper {
+			.bike-vintage {
+				@include backgroundsize(70%);
+			}
+		}
+		}
+
+		.grandpa {
+			.wrapper {
+
+			.bike-grandpa {		
+				@include backgroundsize(70%);
+			}	
+		}
+		}
+
+		.tandem {
+			.wrapper {
+
+			.bike-tandem {
+				@include backgroundsize(70%);
+			}
+		}
+		}
+
+		.baby {
+			.wrapper {
+
+			.bike-baby {	
+				@include backgroundsize(70%);
+			}
+		}
+		}
+
+		.cougar {
+.wrapper {
+
+			
+				.bike-cougar {
+					
+					@include backgroundsize(70%);
+				}
+			}
+		}
+
+		.freestyler {
+
+			.wrapper {
+
+				.bike-freestyler {
+					
+					@include backgroundsize(70%);
+				}
+			}
+		}
+
+		.gangsta {
+
+			.wrapper {
+
+				.bike-gangsta {
+					
+					@include backgroundsize(70%);
+				}
+			}
+		}
+
+		.lilgangsta {
+.wrapper {
+
+			
+				.bike-lilgangsta {
+					
+					@include backgroundsize(70%);
+				}
+		
+		}
+	}
+
+		.runner {
+.wrapper {
+
+			
+				.bike-runner {
+					
+					@include backgroundsize(70%);
+				}
+			}
+		}
+
+		.rigid {
+
+			.wrapper {
+
+				.bike-rigid {
+					
+					@include backgroundsize(70%);
+
+			}
+		}
+		}
+
+		.warrior {
+
+				.wrapper {
+	
+				.bike-warrior {
+					
+					@include backgroundsize(70%);
+				}
+			}
+
+		}
+
+		.lazy {
+
+			.wrapper {
+
+				.bike-lazy {
+					
+					@include backgroundsize(70%);
+				}
+			}	
+		}
+
+		.fake {
+.wrapper {
+
+			
+
+				.bike-fake {
+					
+					@include backgroundsize(70%);
+				}
+			}
+
+		}
+	}
+}
+
+
+@media only screen and (min-width:  800px) {
 
 	.menu-title {
 		display:none;
 	}
-
+	
+	.subnav {
+		display: block;
+	}
+	
 	.navigation {
 		position: fixed;
 		color: $white;
@@ -243,103 +252,288 @@
 		}
 	}
 
-		.wrapper {
-			@include backgroundfixed();
+	.big-wrapper {
+		
+		
+		.vintage {
+			.wrapper {
+			.bike-vintage {
+				@include backgroundsize(60%);
+			}
+		}
+		}
+	}
+}
+
+@media only screen and (min-width : 1024px)  { 
+	
+	
+
+	
+
+	
+
+
+	.big-wrapper {
+		
+		.intro {
+			@include backgroundsize(65%);
 		}
 
-			.bike-nightrider {
-				
-				left: 20%;
-				right: 20%;
+		.nightrider {
 
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-nightrider {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
 			}
+		}
 
-			.bike-traveller {
-				left: 5%;
-				right: 5%;
-			}	
-		
-			.bike-weirdo {
-				left: 5%;
-				right: 5%;
-			}	
-		
-			.bike-hipster {
-				left: 5%;
-				right: 5%;
-	 		}
+		.traveller {
 
-			.bike-swagger {
-				left: 5%;
-				right: 5%;
-			}	
-		
-			.bike-vintage {
-				left: 5%;
-				right: 5%;
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-traveller {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
 			}
-
-			.bike-grandpa {
-				left: 5%;
-				right: 5%;
-			}
-
-			.bike-tandem {
-				left: 5%;
-				right: 5%;
-			}	
-		
-
-			.bike-baby {
-				left: 5%;
-				right: 5%;
-			}	
-			
-			.bike-cougar {
-				left: 5%;
-				right: 5%;
-				
-			}	
-			
-			.bike-freestyler {
-				left: 5%;
-				right: 5%;
-			}	
-			
-			.bike-gangsta {
-				left: 5%;
-				right: 5%;
-			}	
-			
-			.bike-lilgangsta {
-				left: 5%;
-				right: 5%;
-			}		
+		}
 	
-			.bike-runner {
-				left: 5%;
-				right: 5%;
-			}
+		.weirdo {
 
-			.bike-rigid {
-				left: 5%;
-				right: 5%;
-			}
+			padding: 0px;
 
-			.bike-warrior {
-				left: 5%;
-				right: 5%;
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-weirdo {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
 			}
+		}
 	
-			.bike-lazy {
-				left: 5%;
-				right: 5%;
-			}
+		.hipster {
 
-			.bike-fake {
-				
-				left: 30%;
-				right: 30%;
-	
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-hipster {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
 			}
+		}
+	
+		.swagger {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-swagger {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+	
+		.vintage {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-vintage {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+
+		.grandpa {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-grandpa {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+
+		.tandem {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-tandem {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+
+		.baby {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-baby {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+
+		.cougar {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-cougar {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+
+		.freestyler {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-freestyler {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+
+		.gangsta {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-gangsta {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+
+		.lilgangsta {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-lilgangsta {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+
+		.runner {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-runner {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+
+		.rigid {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-rigid {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+
+		.warrior {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);		
+				.bike-warrior {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+
+		.lazy {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+				.bike-lazy {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+
+		.fake {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+
+				.bike-fake {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+	}
+
+
+	
 }

@@ -46,14 +46,41 @@ $fake : #f5978f ;
 	position: relative;
 }
 
-@mixin backgroundfixed() {
-	background-attachment: fixed;
+@mixin backgroundattachment($attachment) {
+	background-attachment: $attachment;
+}
+
+@mixin bikebackground($bike) {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url('../img/bike-' + $bike + '.png') no-repeat;
+	background-size: 90%;
+	background-position: center bottom;
+}
+
+@mixin backgroundsize( $size ) {
+	background-size: $size;
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	
+}
+
+.down {
+	position: fixed;
+	bottom: 30px;
+	z-index: 5;
+	width: 30px;
+	left:50%;
+	margin-left: -15px;
+	opacity: .5;
+
+	&:hover {
+		opacity: 1;
+	}
 }
 
 .menu-title {
@@ -135,14 +162,11 @@ $fake : #f5978f ;
 			
 			@include background('nightrider', no-repeat, center, cover);
 
-			.bike-nightrider {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
+			@include backgroundattachment(scroll);
 
-				img {
-					width: 100%;
-				}
+			.bike-nightrider {
+				@include bikebackground('nightrider');
+				@include backgroundattachment(scroll);
 			}
 		}
 	}
@@ -157,15 +181,11 @@ $fake : #f5978f ;
 			@include wrapper();
 
 			@include background('traveller', no-repeat, center, cover);
+			@include backgroundattachment(scroll);
 
 			.bike-traveller {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('traveller');
+				@include backgroundattachment(scroll);
 			}
 
 		}
@@ -183,15 +203,11 @@ $fake : #f5978f ;
 			@include wrapper();
 
 			@include background('weirdo', no-repeat, center, cover);
-
+			@include backgroundattachment(scroll);
+		
 			.bike-weirdo {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('weirdo');
+				@include backgroundattachment(scroll);
 			}
 		}
 	}
@@ -208,13 +224,7 @@ $fake : #f5978f ;
 			@include background('hipster', no-repeat, center, cover);
 
 			.bike-hipster {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('hipster');
 			}
 		}
 	}
@@ -231,13 +241,7 @@ $fake : #f5978f ;
 			@include background('swagger', no-repeat, center, cover);
 
 			.bike-swagger {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('swagger');
 			}
 		}
 	}
@@ -254,13 +258,7 @@ $fake : #f5978f ;
 			@include background('vintage', no-repeat, center, cover);
 
 			.bike-vintage {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('vintage');
 			}
 		}
 	}
@@ -277,13 +275,7 @@ $fake : #f5978f ;
 			@include background('grandpa', no-repeat, center, cover);
 
 			.bike-grandpa {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('grandpa');
 			}
 		}
 	}
@@ -300,16 +292,7 @@ $fake : #f5978f ;
 			@include background('tandem', no-repeat, center, cover);
 
 			.bike-tandem {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-		
-				
-				img {
-				
-					width: 100%;
-				}
+				@include bikebackground('tandem');
 			}
 		}
 	}
@@ -326,13 +309,7 @@ $fake : #f5978f ;
 			@include background('baby', no-repeat, center, cover);
 
 			.bike-baby {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('baby');
 			}
 		}
 	}
@@ -349,15 +326,7 @@ $fake : #f5978f ;
 			@include background('cougar', no-repeat, center, cover);
 
 			.bike-cougar {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				margin: 0px auto;
-				
-				img {
-					width: 100%;
-
-				}
+				@include bikebackground('cougar');
 			}
 		}
 	}
@@ -374,13 +343,7 @@ $fake : #f5978f ;
 			@include background('freestyler', no-repeat, center, cover);
 
 			.bike-freestyler {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('freestyler');
 			}
 		}
 	}
@@ -397,13 +360,7 @@ $fake : #f5978f ;
 			@include background('gangsta', no-repeat, center, cover);
 
 			.bike-gangsta {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('gangsta');
 			}
 		}
 	}
@@ -420,13 +377,7 @@ $fake : #f5978f ;
 			@include background('lilgangsta', no-repeat, center, cover);
 
 			.bike-lilgangsta {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('lilgangsta');
 			}
 		}
 	}
@@ -443,13 +394,7 @@ $fake : #f5978f ;
 			@include background('runner', no-repeat, center, cover);
 
 			.bike-runner {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('runner');
 			}
 		}
 	}
@@ -466,13 +411,7 @@ $fake : #f5978f ;
 			@include background('rigid', no-repeat, center, cover);
 
 			.bike-rigid {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('rigid');
 			}
 		}
 	}
@@ -489,13 +428,7 @@ $fake : #f5978f ;
 			@include background('warrior', no-repeat, center, cover);
 
 			.bike-warrior {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('warrior');
 			}
 		}
 	}
@@ -512,13 +445,7 @@ $fake : #f5978f ;
 			@include background('lazy', no-repeat, center, cover);
 
 			.bike-lazy {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('lazy');
 			}
 		}
 	}
@@ -535,15 +462,7 @@ $fake : #f5978f ;
 			@include background('fake', no-repeat, center, cover);
 
 			.bike-fake {
-				position: absolute;
-				padding: 10px;
-				bottom: 40px;
-				left:10%;
-				right: 10%;
-				
-				img {
-					width: 100%;
-				}
+				@include bikebackground('fake');
 			}
 		}
 	}
@@ -552,6 +471,7 @@ $fake : #f5978f ;
 .subnav {
 
 	position: fixed;
+	display: none;
 	z-index: 4;
 	right: 10px;
 	top:20%;
@@ -587,6 +507,10 @@ $fake : #f5978f ;
 					text-align: right;
 				}
 			}
+		}
+
+		.selected {
+			background-color: rgba(255,255,255, 1);
 		}
 	}
 }
