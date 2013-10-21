@@ -198,11 +198,24 @@
 		}
 
 		.fake {
-.wrapper {
+			.wrapper {
 
 			
 
 				.bike-fake {
+					
+					@include backgroundsize(70%);
+				}
+			}
+
+		}
+
+		.train {
+			.wrapper {
+
+			
+
+				.bike-train {
 					
 					@include backgroundsize(70%);
 				}
@@ -527,6 +540,21 @@
 				@include backgroundsize(contain);
 
 				.bike-fake {
+					@include backgroundattachment(fixed);
+					@include backgroundsize(50%);
+				}
+			}
+		}
+
+		.train {
+
+			padding: 0px;
+
+			.wrapper {
+				@include backgroundattachment(fixed);
+				@include backgroundsize(contain);
+
+				.bike-train {
 					@include backgroundattachment(fixed);
 					@include backgroundsize(50%);
 				}

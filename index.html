@@ -1,16 +1,17 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<title>Cyclemon</title>
 
-	<link rel="stylesheet" type="text/css" href="resources/css/base.css">
-		
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="resources/css/reset.css">
+	<link rel="stylesheet" href="resources/css/base.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
 	
-	<nav class="navigation">
+	<nav id="nav" class="navigation">
 		<ul>
 			<li>experiment</li>
 			<li>know more</li>
@@ -18,7 +19,9 @@
 		</ul>
 	</nav> 
 
-	<h1 class="menu-title">menu</h1>
+
+		<h1 class="menu-title"><a href="#nav">menu</a></h1>
+
 
 	<img class="down" src="resources/img/down.png" />
 
@@ -41,8 +44,9 @@
 			<li id="runner" > <span>runner</span> </li>
 			<li id="rigid" > <span>rigid guy</span> </li>
 			<li id="warrior" > <span>warrior</span> </li>
-			<li id="lazy" class="prelast" > <span>lazy guy</span> </li>
-			<li id="fake" > <span>fake</span> </li>
+			<li id="lazy"> <span>lazy guy</span> </li>
+			<li id="fake"  class="prelast"  > <span>fake</span> </li>
+			<li id="train" > <span>train</span> </li>
 		</ul>
 	</nav>
 
@@ -251,11 +255,22 @@
 			
 		</section>
 
+		<section class="train full">
+			<div class="wrapper">
+				
+				<div class="bike-train">
+					
+				</div>
+
+			</div>
+			
+		</section>
+
 
 	</section>
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" charset="utf-8"></script>
-	<script type="text/javascript" src="resources/js/base.min.js"></script>
+	<script  src="resources/js/base.min.js"></script>
 </body>
 </html>

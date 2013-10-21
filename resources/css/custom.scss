@@ -21,6 +21,7 @@ $rigid : #dbdbdb;
 $warrior : #fdddae;
 $lazy : #fb9d79;
 $fake : #f5978f ;
+$train : #9e554f ;
 
 
 /* MIXINS */
@@ -31,6 +32,11 @@ $fake : #f5978f ;
         position: $position;
         size: $size;
     }
+}
+
+@mixin animation() {
+	-webkit-transition:all 1s ease;
+	-moz-transition:all 1s ease;
 }
 
 @mixin bike($color)
@@ -93,39 +99,54 @@ $fake : #f5978f ;
 	width: 100%;
 	color: $darkyellow;
 	background-color: $yellow;
+
+	a {
+		color:$darkyellow;
+		text-decoration: none;
+	}
 }
+	
 
 .navigation {
+	position: relative;
+	z-index: 4;
+	font-family: intro;
+	width: 100%;
+	color: $darkyellow;
+	margin-top: -150px;
+	
+	@include animation();
+
+	ul {
 		position: relative;
-		z-index: 4;
-		font-family: intro;
+		left: 0px;
 		width: 100%;
-		color: $darkyellow;
-		margin-top: -158px;
+		background-color: white;
 
-		ul {
-			position: relative;
-			left: 0px;
-			width: 100%;
-			background-color: white;
+		li { 
+			margin: 10px;
+			margin-left: 0px;
+			color: $yellow;
+			padding: 10px;
+			border-bottom: 1px $yellow solid;
 
-			li { 
-				margin: 10px;
-				margin-left: -200px;
+			&:hover {
 				color: $darkyellow;
-				padding: 10px;
-				border-bottom: 1px $yellow solid;
-
-				&:hover {
-					color: $white;
-				}
-			}
-
-			.last {
-				border-bottom: none;
 			}
 		}
+
+		.last {
+			border-bottom: none;
+		}
 	}
+
+	&:target {
+	
+
+		margin-top:0px;
+		
+	}
+}
 
 .big-wrapper {
 	position: absolute;
@@ -463,6 +484,23 @@ $fake : #f5978f ;
 
 			.bike-fake {
 				@include bikebackground('fake');
+			}
+		}
+	}
+
+	.train {
+		@include bike($train);
+		
+		
+
+		.wrapper {
+		
+			@include wrapper();
+
+			@include background('train', no-repeat, center, cover);
+
+			.bike-train {
+				@include bikebackground('train');
 			}
 		}
 	}

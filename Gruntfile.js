@@ -12,6 +12,21 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    imagemin: {                          // Task
+      dynamic: {                         // Another target
+         options: {                       // Target options
+          optimizationLevel: 3
+
+        },
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'resources/img/',                   // Src matches are relative to this path
+          src: ['resources/img/*.{png,jpg,gif}'],   // Actual patterns to match
+          dest: 'resources/img/dist/'                  // Destination path prefix
+        }]
+      }
+    },
     
     sass: {                              // Task
       dist: {                            // Target
@@ -45,6 +60,6 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.registerTask('default', 'watch');
+  grunt.registerTask('default', ['imagemin:dynamic', 'watch']);
 
 }

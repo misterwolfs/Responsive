@@ -1,12 +1,30 @@
 var $menu = $('.menu-title');
+var opened = false;
+var didScroll = false;
+var sections = Array();
+
+
 
 $(function (){
-	
+		
+	console.log('scroll', didScroll);
 
 	$menu.on('click', function() {
-		controller.menuClicked($(this));
+		//controller.menuClicked($(this));
+
+		if(opened == true) {
+			opened = false;
+
+			$(this).find('a').text('menu').attr('href', '#');
+		}
+		else {
+			opened = true;
+			$(this).find('a').text('close').attr('href', '#nav');
+		}
 		
 	});
+
+	
 
 	$('.subnav ul li').on('click', function() {
 		var selectedBike = $(this).attr('id');
@@ -32,9 +50,12 @@ $(function (){
 		controller.goDown(next);
 		$(selected).removeClass('selected');
 	});
-
-
 })
+
+function scroll() {
+          didScroll = true;
+          console.log('scrolled', didScroll);
+     }
 
 var controller = ({
 	number : 1,
@@ -48,36 +69,6 @@ var controller = ({
 		else {
 			controller.menuOpen();
 		}
-	},
-
-	menuClose : function() {
-		console.log('close');
-
-		$('.navigation ul li').delay(500).animate({
-			marginLeft : "-200px"
-		}, 100);
-
-		$('.navigation').animate({
-			marginTop : "-159px"
-		}, 500, function() {
-			$menu.text('menu').toggleClass('opened')
-		});
-	},
-
-	menuOpen : function() {
-		console.log('open');
-
-		$('.navigation').animate({
-			marginTop : "0px"
-		}, 500, function() {
-			$menu.text('close').toggleClass('opened')
-		});
-
-		$('.navigation ul li').delay(500).animate({
-			marginLeft : "10px"
-		}, 100);
-
-		$('.menu-title').css({'position' : 'relative'});
 	},
 
 	subnavClicked : function($selectedBike) {
@@ -101,6 +92,13 @@ var controller = ({
 		$('#' + $number).addClass('selected');
 
 		controller.number++;
+	},
+
+	addSelected : function($selected) {
+
+		$('.subnav ul li.selected').removeClass('selected');
+
+		$('.subnav ul li#' + $selected).addClass('selected');
 	}
 });
 
